@@ -1,5 +1,7 @@
 import './App.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import BookCover from './BookCover';
+import ChapterSelector from './ChapterSelector';
 import brasCubasBookCover from './assets/bras-cubas-book-cover.jpeg'
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
   return (
     <>
       <BookCover bookCover={bookInfo.bookCover} alternativeText={bookInfo.alternativeText}/>
+      <ChapterSelector currentChapter={1}/>
     </>
   )
 }
